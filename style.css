@@ -301,7 +301,10 @@ footer span{
 .neon:hover::after,
 .neon:focus::after{
     opacity: 1;
-}
+} 
+
+
+
 
 
 /* button-links end */
