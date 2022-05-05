@@ -81,6 +81,7 @@ header a {
     margin: 0;
     font-size: 40px;
     color: white;
+    text-decoration: none;
 }
 
 .bold-name{
