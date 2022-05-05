@@ -284,7 +284,6 @@ footer span{
     box-shadow: 0 0 2em 0.5em var(--neon) ;
     opacity: 0;
     transition: opacity 100ms linear;
-
 }
 
 .neon:focus,
@@ -302,6 +301,5 @@ footer span{
 .neon:hover::after,
 .neon:focus::after{
     opacity: 1;
-
 }
 /* button-links end */
