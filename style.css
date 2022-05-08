@@ -341,3 +341,71 @@ footer span {
 }
 
 /* footer end  */
+
+
+/* responsive start */
+
+@media (max-width:1028px){
+    .banner-container{
+        width: 1200px;
+    }
+    .container p{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .container h1{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 60px;
+    }
+    .container button{
+        margin: 20px;
+    }
+    .right-section{
+        margin-right: 100px;
+        margin-top: 60px;
+    }
+    .right-section .submit-button{
+        width: 200px;
+    }
+    header{
+        width: 1200px;
+        height: 25px;
+    }
+    header nav{
+        margin-right: 30px;
+        display: flex;
+        flex-direction: row;
+    }
+    header a{
+        margin-left: 30px;
+    }
+    .section-two{
+        width: 1200px;
+    }
+    .section-two .card-container{
+        width: 250px;
+        height: 350px;
+    }
+    .section-two .image-container{
+        width: 250px;
+        height: 350px;
+    }
+    .links{
+        width: 1200px;
+        height: 1000px;
+        display: block;
+        padding-top: 250px;
+        display: flex;
+        flex-direction: column;
+    }
+    .links .button-links{
+        
+        margin-bottom: 200px;
+    }
+    footer{
+        width: 1200px;
+    }
+}
+
+/* responsive end */
