@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Percentage calculator</title>
+  <link rel="stylesheet" href="style.css" >
+  
+  
+  <script language="javascript">
+ 
+  function calc()
+  { 
+    let max_total=0, obt_total=0, percentage;
+    
+    
+    let max_score=[];
+    max_score[0]=document.getElementById('max1').value;
+    max_score[1]=document.getElementById('max2').value;
+    max_score[2]=document.getElementById('max3').value;
+    max_score[3]=document.getElementById('max4').value;
+    max_score[4]=document.getElementById('max5').value;
+    max_score[5]=document.getElementById('max6').value;
+ 
+    let obt_score=[];
+    obt_score[0]=document.getElementById('n1').value;
+    obt_score[1]=document.getElementById('n2').value;
+    obt_score[2]=document.getElementById('n3').value;
+    obt_score[3]=document.getElementById('n4').value;
+    obt_score[4]=document.getElementById('n5').value;
+    obt_score[5]=document.getElementById('n6').value;
+    
+    
+    for(let i=0;i<6;i++){
+      max_total+=Number(max_score[i]);
+      obt_total+=Number(obt_score[i]);
+    }
+      
+      percentage=(obt_total/max_total)*100;
+      alert(percentage+"%");
+  }
+  
+  function withCE(){
+    document.getElementById('max1').value=100;
+    document.getElementById('max2').value=100;
+    document.getElementById('max3').value=80;
+    document.getElementById('max4').value=80;
+    document.getElementById('max5').value=80;
+    document.getElementById('max6').value=80;
+    document.getElementById('ce').value="without";
+    
+    let temp=document.getElementById('max1').value;
+    
+  
+   
+  }
+      
+</script>
+
+  
+</head>
+<body>
+  
+  <div class="frm">
+    
+    <div class="grid_items">
+      <p class="heading">Subject</p>
+    </div>
+    <div class="grid_items">
+      <p class="heading">Maximum score</p>
+    </div>
+    <div class="grid_items">
+      <p class="heading">Obtained score</p>
+    </div>
+    
+    
+    <div class="grid_items">
+      <p>English</p>
+    </div>
+    
+    <div class="grid_items">
+      <input type="number" value="80" id="max1">
+    </div>
+    
+    <div class="grid_items">
+      <input type="number" id="n1">
+    </div>
+    
+    
+    <div class="grid_items">
+      <p>Part II language</p>
+    </div>
+    
+    <div class="grid_items">
+      <input type="number" value="80" id="max2">
+    </div>
+    
+    <div class="grid_items">
+      <input type="number" id="n2">
+    </div>
+    
+    
+    <div class="grid_items">
+      <p>Maths</p>
+    </div>
+    
+    <div class="grid_items">
+      <input type="number" value="60" id="max3">
+    </div>
+    
+    <div class="grid_items">
+      <input type="number" id="n3">
+    </div>
+   
+    
+    <div class="grid_items">
+      <p>Physics</p>
+    </div>
+    
+    <div class="grid_items">
+      <input type="number" value="60" id="max4">
+    </div>
+    
+    <div class="grid_items">
+      <input type="number" id="n4">
+    </div>
+    
+    
+    <div class="grid_items">
+      <p>Chemistry</p>
+    </div>
+    
+    <div class="grid_items">
+      <input type="number" value="60" id="max5">
+    </div>
+    
+    <div class="grid_items">
+      <input type="number" id="n5">
+    </div>
+    
+    
+    <div class="grid_items">
+      <p>Bio/C.S</p>
+    </div>
+    
+    <div class="grid_items">
+      <input type="number" value="60" id="max6">
+    </div>
+    
+    <div class="grid_items">
+      <input type="number" id="n6">
+    </div>
+    
+  </div>
+  
+  <div id="btn">
+    <input type="button" OnClick="calc()" value="calculate" id="submit">
+
+    <input type="button" OnClick="withCE()" value="With CE" id="ce">
+  </div>
+</body>
+</html>
